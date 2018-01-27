@@ -66,3 +66,5 @@ node_modules/
 .DS_Store
 # Ignore encrypted secrets key file.
 config/secrets.yml.key
+
+memo.md
