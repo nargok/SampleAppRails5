@@ -33,6 +33,8 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'devise'
 gem 'jquery-rails'
 gem 'popper_js', '~> 1.12.3'
+gem 'sidekiq'
+gem 'sinatra'
 gem 'tether-rails'
 
 group :development, :test do
