@@ -7,7 +7,9 @@ Rails.application.routes.draw do
   root 'home#index'
   resources :posts, only: [:create]
 
-  mount Sidekiq::Web, at: '/sidekiq'
+  authenticate :user, ->(u) { u.admin? } do
+    mount Sidekiq::Web, at: '/sidekiq'
+  end
 
   mount LetterOpenerWeb::Engine, at: '/letter_opener' if Rails.env.development?
 end
