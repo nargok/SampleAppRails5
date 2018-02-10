@@ -5,7 +5,7 @@
 # http://capistranorb.com/documentation/getting-started/configuration/
 #-----------------------------------------------------------------------
 
-lock '3.10'
+lock '3.10.1'
 
 #---------------------------------
 # ご自身の環境に合わせて修正が必要です。
@@ -13,11 +13,11 @@ lock '3.10'
 set :repo_url, 'https://github.com/nargok/SampleAppRails5.git'
 
 # base
-set :application, 'RailsSampleApp'
+set :application, 'SampleAppRails5'
 set :branch, 'master'
 set :user, 'admin'
 set :deploy_to, "/opt/#{fetch(:application)}"
-set :rbenv_ruby, File.read('.ruby-version').strip
+# set :rbenv_ruby, File.read('.ruby-version').strip
 set :pty,             false
 set :use_sudo,        false
 set :stage,           :production
