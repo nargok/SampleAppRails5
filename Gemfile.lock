@@ -404,6 +404,7 @@ DEPENDENCIES
   devise
   factory_girl_rails
   faker
+  ffi (~> 1.9.18)
   jbuilder (~> 2.5)
   jquery-rails
   kaminari
