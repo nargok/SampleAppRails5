@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'activeadmin'
+gem 'activeadmin', '~> 1.1.0'
 gem 'aws-sdk', '~> 2.3'
 gem 'bootstrap', '~> 4.0.0'
 gem 'counter_culture'
