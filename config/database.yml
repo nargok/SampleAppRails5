@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: RailsSampleApp_production
-  username: RailsSampleApp
-  password: <%= ENV['RAILSSAMPLEAPP_DATABASE_PASSWORD'] %>
+  host: <%= Rails.application.secrets.DB_HOST %>
+  database: <%= Rails.application.secrets.DB_NAME %>
+  username: <%= Rails.application.secrets.DB_USERNAME %>
+  password: <%= Rails.application.secrets.DB_PASSWORD %>
