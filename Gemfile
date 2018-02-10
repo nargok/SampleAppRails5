@@ -30,6 +30,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'activeadmin'
+gem 'aws-sdk', '~> 2.3'
 gem 'bootstrap', '~> 4.0.0'
 gem 'counter_culture'
 gem 'devise'
@@ -40,7 +41,6 @@ gem 'popper_js', '~> 1.12.3'
 gem 'sidekiq'
 gem 'sinatra'
 gem 'tether-rails'
-
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
